@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #81263c, #ffccc9);
+    color: #bb056f;
+    line-height: 1.6;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+form {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #1b1819;
+    text-align: center;
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ff85a2;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #ff85a2;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    background-color: #ff85a2;
+    color: rgb(151, 8, 96);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff5c7c;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #ff334d;
+    transform: translateY(0);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: hsl(330, 9%, 96%);
+    border: 10px;
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+li:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#description {
+    list-style-type: none;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #ff85a2;
+    border-radius: 20px;
+    background-color: #ffccc9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#description h2 {
+    font-size: 20px;
+    color: #ff85a2;
+}
+
+li p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #9b1654;
+}
